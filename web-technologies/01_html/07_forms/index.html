@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <title>Formularz rejestracji</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Przykładowy formularz rejestracji">
+    </head>
+    <body>
+        <h2>Zarejestruj się</h2>
+        <form>
+            <fieldset>
+                <legend>Dane konta</legend>
+                    <label for="username">Nazwa użytkownika</label>
+                    <input type="text" id="username">
+                </div>
+                <div>
+                    <label for="email">Adres Email</label>
+                    <input type="email" id="email" placeholder="jan@kowalski.pl">
+                </div>
+                <div>
+                    <label for="password">Hasło</label>
+                    <input type="password" id="password">
+                </div>
+                <div>
+            </fieldset>
+            <fieldset>
+                <legend>Dane personalne</legend>
+                <div>
+                    <label for="firstName">Imię</label>
+                    <input type="text" id="firstname">
+                </div>
+                <div>
+                    <label for="secondName">Nazwisko</label>
+                    <input type="text" id="secondname">
+                </div>
+                <div>
+                    <label for="number">Wiek</label>
+                    <input type="number" id="number">
+                </div>
+                <div>
+                    <p>Płeć</p>
+                    <input type="radio" name="gender" id="male" checked>
+                    <label for="male">Mężczyzna</label>
+                    <input type="radio" name="gender" id="female">
+                    <label for="female">Kobieta</label>
+                </div>
+            </fieldset>
+            <button>
+                Zarejestruj się
+            </button>
+        </form>
+    </body>
+</html>
