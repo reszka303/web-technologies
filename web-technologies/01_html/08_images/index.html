@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <title>Obrazy i iframe w HTML</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Umieszczanie obrazów w dokumentach HTML">
+    </head>
+    <body>
+        <h1>Grafiki i osadzanie</h1>
+        <div>
+            <h2>Osadzanie grafiki ze strony</h2>
+            <a href="https://javastart.pl" target="_target">
+            <img src="https://javastart.pl/assets/images/javastart-logo.png" alt="Logo JavaStart" title="Uśmiechnięty kubek kawy z JavaStart">
+            </a>
+        </div>
+        <div>
+            <p></p>
+            <h2>Osadzanie grafiki z pliku</h2>
+            <img src="gta_vice_city.jpg" width="400px" alt="Zachód słońca i palmy w GTA Vice City" title="GTA Vice City">
+        </div>
+        <div>
+            <h2>Pierwszy sposób odtwarzania video</h2>
+            <video src="http://techslides.com/demos/sample-videos/small.mp4" controls></video>
+        </div>
+        <div>
+            <!-- Używane, gdy mamy kilka odnośników do widea. Taki sposób zapisy jest sugerowany niż powyższy -->
+           <h2>Drugi sposób odtwarzania video</h2>
+            <video controls>
+                <source src="http://techslides.com/demos/sample-videos/small.mp4" type="video/mp4">
+                <source src="http://techslides.com/demos/sample-videos/small.webm" type="video/webm">
+            </video>
+        </div>
+        <div>
+            <h2>Osadzanie jednej stron napisanej w HTML do drugiej strony HTML </h2>
+            <iframe src="second_page.html" frameborder="0"></iframe>
+        </div>
+        <div>
+            <h2>Osadzony film z YouTube'a</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/aduWl2Sx7vs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </body>
+</html>
