@@ -1,0 +1,35 @@
+/* [href] {
+    color: orange;
+} */
+
+[target="_blank"] {
+    color: red;
+}
+
+[href^="#"] {
+    color: green;
+}
+
+[href*="javastart.pl"] {
+    color: indigo;
+}
+
+[target="_blank"] {
+    color: violet;
+}
+
+[src $=".jpg"] {
+    width: 400px;
+}
+
+[class~="values"] {
+    color: yellow;
+}
+
+[class|="image"] {
+    color: lightyellow;
+}
+
+[class="ignore" i] {
+    color: steelblue;
+}
