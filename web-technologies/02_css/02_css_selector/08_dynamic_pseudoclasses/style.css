@@ -1,0 +1,20 @@
+a:link {
+    color: orange;
+}
+
+a:visited {
+    color: gray;
+}
+
+a:hover {
+    color: red;
+}
+
+a:active {
+    color: green;
+}
+
+input:focus {
+    background-color: grey;
+    color: white;
+}
