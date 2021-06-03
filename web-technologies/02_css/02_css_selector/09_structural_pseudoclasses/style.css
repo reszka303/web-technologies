@@ -1,0 +1,54 @@
+/* article > p:first-of-type {
+    font-style: italic;
+    color: gray;
+} */
+
+/* ul > li:nth-child(even) {
+    background-color: lightgray;
+} */
+
+/* ul > li:nth-child(odd) {
+    background-color: lightgray;
+} */
+
+/* liczby nieparzyste */
+/* ul > li:nth-child(2n + 1) {
+    background-color: lightgray;
+} */
+
+/* liczby parzyste */
+/* ul > li:nth-child(2n) {
+    background-color: lightgray;
+} */
+
+/* wyrażenie (an + b) */
+
+/* dla liczb nieparzystych (even)
+(2n + 1) = 2 * 0 + 1 = 1;
+(2n + 1) = 2 * 1 + 1 = 3;
+(2n + 1) = 2 * 2 + 1 = 5; 
+
+dla liczb parzystych (odd)
+(2n) = 2 * 0 = 0;
+(2n) = 2 * 1 = 2;
+(2n) = 2 * 2 = 4; */
+
+/* ul > li:nth-last-child(2n) {
+    background-color: lightgray;
+} */
+
+p:first-child {
+    color: red;
+}
+
+p:last-child {
+    color: green;
+}
+
+p:only-child {
+    color: orange;
+}
+
+h2:only-of-type {
+    color: red;
+}
