@@ -1,0 +1,50 @@
+/* h2 {
+    color: green;
+} */
+
+/* h2 {
+    color: white;
+} */
+
+/* selektor identyfikatora - specyficzność: 100 */
+
+/* section > #ingredients-header {
+    color: red;
+} */
+
+/* #ingredients-header {
+    color: red;
+}  */
+
+#ingredients-header {
+    color: red !important;
+}
+
+/* selektor klasy - specyficzność: 10*/
+/* .section-header {
+    color: green;
+} */
+
+/* selektor typu - specyficzność: 1 */
+/* h2 {
+    color: blue;
+} */
+
+/* Specyficzność */
+/* 
+identyfikator - 100 
+klasy - 10
+typu - 1
+*/
+
+/* ul > li selektor typu czyli specyficznośc wynosi 1 + 1 = 2 */
+
+/* ul.list > li#second-bullet */
+/* 
+ul - selektor typu = 1;
+list - selektor klasy = 10;
+> - selektor dziecka nie ma wpływu na specyficzność;
+li - selektor typu = 1;
+#second-bullet - selektor identyfikatora = 100;
+1 + 10 + 1 + 100 = 112;
+*/
