@@ -1,24 +1,14 @@
-function numberDigits(number) {
-    let counterDigits = 0;
+function getNumberOfDigits(number) {
+    let digits = 0;
     do {
-        counterDigits++;
+        digits++;
         number /= 10;
-    } while(number >= 0);
-    return counterDigits;
+    } while (number >= 1);
+    return digits;
 }
 
-function printNumberDigits(number) {
-    console.log("Liczba " + number + counterDigits(number) + " cyfrowa"); 
-}
-
-let number1 = 1;
-let number12 = 12;
-let number321 = 321;
-let number2435 = 2435;
-
-// let counter = numberDigits(number1);
-// console.log(counter);
-console.log(number1)
-
-// numberDigits(number1);
-// printNumberDigits(number1);
+console.log("Liczba cyfr w liczbie 1 to: " + getNumberOfDigits(1));
+console.log("Liczba cyfr w liczbie 22 to: " + getNumberOfDigits(22));
+console.log("Liczba cyfr w liczbie 223 to: " + getNumberOfDigits(223));
+console.log("Liczba cyfr w liczbie 2345 to: " + getNumberOfDigits(2345));
+console.log("Liczba cyfr w liczbie 12345 to: " + getNumberOfDigits(12345));
