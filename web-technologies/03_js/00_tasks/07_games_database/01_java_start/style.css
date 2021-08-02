@@ -1,0 +1,29 @@
+body {
+    text-align: center;
+}
+
+main, table {
+    width: 100%;
+}
+
+thead > tr {
+    background-color: lightgray;
+}
+
+table,
+tr,
+th, td {
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+form {
+    display: inline-block;
+    width: 100%;
+    max-width: 600px;
+}
+
+input {
+    display: block;
+    width: 100%;
+}

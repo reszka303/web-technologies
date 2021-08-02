@@ -1,0 +1,30 @@
+body {
+    text-align: center;
+}
+
+::placeholder {
+    color: yellow;
+}
+
+main, table {
+    width: 100%;
+}
+
+thead > tr {
+    background-color: black;
+}
+
+table, tr, th, td {
+    border: 2px solid orange;
+}
+
+form {
+    display: inline-block;
+    width: 100%;
+    max-width: 600px;
+}
+
+input {
+    display: block;
+    width: 100%;
+}

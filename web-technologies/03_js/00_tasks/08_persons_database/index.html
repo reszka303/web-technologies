@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <title>Baza osób</title>
+        <meta name="description" content="Nauka dodawania elementów w JS">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Baza osób</h1>
+        <main>
+            <section>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Imię</th>
+                            <th>Nazwisko</th>
+                            <th>Id</th>
+                            <th>Usuń osobę</th>
+                        </tr>
+                    </thead>
+                    <tbody class="person-table-body">
+    
+                    </tbody>
+                </table>
+            </section>
+            <section class="form">
+                <form>
+                    <input name="first-name" placeholder="Imię" id="first-name">
+                    <input name="last-name" placeholder="Nazwisko" id="last-name">
+                    <input name="id" placeholder="Id" id="id" maxlength="6" min="0" max="6" required>
+                    <button type="button" id="add-butto">Dodaj osobę</button>
+                </form>
+            </section>
+        </main>
+        <script src="script.js"></script>
+    </body>
+</html>
