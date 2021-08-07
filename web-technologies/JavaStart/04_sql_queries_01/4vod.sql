@@ -5,8 +5,8 @@ CREATE TABLE movie
     id                INT           NOT NULL AUTO_INCREMENT,
     title             VARCHAR(100)  NOT NULL,
     description       VARCHAR(2000) NULL    ,
-    ratings           INT           NOT NULL,
-    year              INT           NULL    ,
+    rating            INT           NOT NULL,
+    year              INT           NOT NULL,
     movie_category_id INT           NOT NULL,
     PRIMARY KEY (id)
 );
@@ -20,10 +20,10 @@ CREATE TABLE movie_category
 
 CREATE TABLE subscription
 (
-    id         INT  NOT NULL AUTO_INCREMENT,
-    start_date DATE NOT NULL,
-    end_date   DATE NOT NULL,
-    user_id    INT  NOT NULL,
+    id         INT      NOT NULL AUTO_INCREMENT,
+    start_date DATETIME NOT NULL,
+    end_date   DATETIME NOT NULL,
+    user_id    INT      NOT NULL,
     PRIMARY KEY (id)
 );
 
@@ -33,7 +33,7 @@ CREATE TABLE user
     name          VARCHAR(45) NOT NULL,
     email         VARCHAR(45) NOT NULL,
     password      VARCHAR(45) NOT NULL,
-    last_movie_id INT         NOT NULL,
+    last_movie_id INT         NULL    ,
     PRIMARY KEY (id)
 );
 
@@ -42,9 +42,10 @@ ALTER TABLE user
 
 CREATE TABLE watch_progress
 (
-    watch_time INT NOT NULL,
-    user_id    INT NOT NULL,
-    movie_id   INT NOT NULL
+    user_id        INT NOT NULL,
+    movie_id       INT NOT NULL,
+    watch_progress INT NOT NULL,
+    PRIMARY KEY (user_id, movie_id)
 );
 
 ALTER TABLE subscription
